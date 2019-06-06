@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gagarin Hall</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__wrap container">
+			<div class="header__flex">
+				<button class="header__menu-btn"></button>
+				<img src="img/logo.jpg" alt="" class="header__menu-img" width="180" height="41">
+				<a href="tel:+79253443134" class="header__menu-tel"></a>
+			</div>
+
+			<nav class="header__nav">
+				<ul class="nav__list p0">
+					<li class="nav__item">
+						<a href="#about" class="nav__link">Залы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#why" class="nav__link">Услуги</a>
+					</li>
+					<li class="nav__item">
+						<a href="#projects" class="nav__link">Галерея</a>
+					</li>
+					<li class="nav__item nav__item__success">
+						<a href="#success" class="nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="tel:+79253443134" class="header__tel-link">+7 (925) 344-31-34</a>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="main__slider">
+			<div class="slider__wrap">
+				<div class="slide__items">
+					<img src="img/main-img-desk.jpg" alt="" class="slide__image" width="937" height="648">
+					<div class="slide__texts">
+						<div class="container">
+							<p class="p0 slide__head">GAGARIN HALL</p>
+							<p class="p0 slide__text">Современный киноконцертный зал для проведения крупных мероприятий. Вместимость зала до 200 человек.</p>
+							<button class="slide__button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide__items">
+					<img src="img/main-img-desk2.jpg" alt="" class="slide__image" width="875" height="648">
+					<div class="slide__texts">
+						<div class="container">
+							<p class="p0 slide__head">ЛОМОНОСОВ BC</p>
+							<p class="p0 slide__text">Аудитория-трансформер. При необходимости разделяется раздвижной стеной на две аудитории.</p>
+							<button class="slide__button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide__items">
+					<img src="img/main-img-desk3.jpg" alt="" class="slide__image" width="796" height="648">
+					<div class="slide__texts">
+						<div class="container">
+							<p class="p0 slide__head">ЛОМОНОСОВ D</p>
+							<p class="p0 slide__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+							<button class="slide__button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+				<div class="slide__items">
+					<img src="img/main-img-desk4.jpg" alt="" class="slide__image" width="823" height="648">
+					<div class="slide__texts">
+						<div class="container">
+							<p class="p0 slide__head">ПАВЛОВ СТУДИО</p>
+							<p class="p0 slide__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+							<button class="slide__button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+				<div class="slide__items">
+					<img src="img/main-img-desk5.jpg" alt="" class="slide__image" width="903" height="648">
+					<div class="slide__texts">
+						<div class="container">
+							<p class="p0 slide__head">ЭЙНШТЕЙН AREA</p>
+							<p class="p0 slide__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+							<button class="slide__button">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider__arrows container">
+			        <button class="slider-arrow1" onclick="minusSlide()"></button>
+					<div class="slider__buttons">
+				        <button class="slider-button" onclick="currentSlide(1)"></button>
+				        <button class="slider-button" onclick="currentSlide(2)"></button>
+				        <button class="slider-button" onclick="currentSlide(3)"></button>
+				        <button class="slider-button" onclick="currentSlide(4)"></button>
+				        <button class="slider-button" onclick="currentSlide(5)"></button>
+			    	</div>
+
+			        <button class="slider-arrow2" onclick="plusSlide()"></button>
+			    </div>
+			</div>
+		</section>
+
+		<section class="about container">
+			<p class="about__text1 p0">Gagarin SPACE — уникальная многофункциональная площадка для мероприятий. Здесь созданы отличные условия, как для масштабных событий, так и для конфиденциальных деловых встреч.</p>
+			<p class="about__text2 p0">Gagarin SPACE идеально подходит для проведения крупномасштабных конференций, корпоративных мероприятий, мастер-классов, семинаров, тренингов, концертных программ.</p>
+			<p class="about__text3 p0">Оснащением Gagarin Space занималась компания «Техника и Технологии Театра» — автор проекта Концертного зала Крокус Сити Холл.</p>
+		</section>
+
+		<section class="rooms container">
+			<h2 class="p0 rooms__title container">Залы</h2>
+
+			<div class="rooms__info container">
+				<p class="p0 rooms__head">Gagarin Hall</p>
+				<p class="p0 rooms__metres">270 кв. м.</p>
+				<p class="p0 rooms__quantity">до 200 человек</p>
+				<p class="p0 rooms__text">Современный киноконцертный зал для проведения крупных мероприятий.</p>
+			</div>
+
+			<div class="rooms__images">
+				<img src="img/slider-room.jpg" alt="" class="rooms__image click1">
+				<div class="rooms__images2 container">
+					<img src="img/slider-room2.jpg" alt="" class="rooms__image2 click2">
+					<img src="img/slider-room3.jpg" alt="" class="rooms__image2 click3">
+				</div>
+			</div>
+
+			<div class="rooms__more container">
+				<a href="files/sample.pdf" download class="rooms__download-link"><p class="p0 rooms__download">Скачать технический райдер</p></a>
+				<p class="p0 rooms__sub">Наличие полного перечня технического оборудования уточняется на технической встрече.</p>
+				<button class="rooms__btn">Оставить заявку</button>
+				<p class="p0 room__desk">Заинтересовал зал? Оставьте заявку или позвоните по телефону<br>+7 (925) 344-31-34</p>
+			</div>
+
+
+
+			<div class="rooms__modal">
+
+				<div class="rooms__modal__images">
+					<img src="img/slider-room.jpg" alt="" class="rooms__modal__image">
+					<img src="img/slider-room2.jpg" alt="" class="rooms__modal__image">
+					<img src="img/slider-room3.jpg" alt="" class="rooms__modal__image">
+				</div>
+
+				<div class="rooms__modal__arrows container">
+			        <button class="rooms__modal-arrow1" onclick="minusSlide3()"></button>
+
+					<div class="rooms__modal__buttons">
+				        <button class="rooms__modal-button" onclick="currentSlide3(1)"></button>
+				        <button class="rooms__modal-button" onclick="currentSlide3(2)"></button>
+				        <button class="rooms__modal-button" onclick="currentSlide3(3)"></button>
+			    	</div>
+
+			        <button class="rooms__modal-arrow2" onclick="plusSlide3()"></button>
+				</div>
+
+			</div>
+
+			<div class="modal__shadow"></div>
+
+		</section>
+		
+		<section class="events container">
+			<p class="p0 events__head">В этом зале успешно провели свои мероприятия:</p>
+			<div class="events__images">
+				<ul class="events__images__list p0">
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					<li class="events__images__item">
+						<img src="img/dance.jpg" alt="" class="events__image">
+						<p class="p0 events__image-text">Школа танцев<br>KURAZH DANCE</p>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="events__images__arrows container">
+		        <button class="events__images-arrow1 btn-back" onclick="minusSlide2()"></button>
+
+				<div class="events__images__buttons">
+			        <button class="events__images-button" onclick="currentSlide2(1)"></button>
+			        <button class="events__images-button" onclick="currentSlide2(2)"></button>
+			        <button class="events__images-button" onclick="currentSlide2(3)"></button>
+			        <button class="events__images-button" onclick="currentSlide2(4)"></button>
+			        <button class="events__images-button" onclick="currentSlide2(5)"></button>
+		    	</div>
+
+		        <button class="events__images-arrow2 btn-next" onclick="plusSlide2()"></button>
+			</div>
+
+		</section>
+
+
+		<section class="rooms2 container">
+			<div class="rooms2__info container">
+				<p class="p0 rooms2__head">Ломоносов ВС</p>
+				<p class="p0 rooms2__metres">75 кв. м.</p>
+				<p class="p0 rooms2__quantity">до 60 человек</p>
+				<p class="p0 rooms2__text">Аудитория-трансформер. При необходимости разделяется раздвижной стеной на две аудитории.</p>
+			</div>
+
+			<div class="rooms2__more container">
+				<a href="files/sample.pdf" download class="rooms2__download-link"><p class="p0 rooms2__download">Скачать технический райдер</p></a>
+				<p class="p0 rooms2__sub">Наличие полного перечня технического оборудования уточняется на технической встрече.</p>
+				<button class="rooms2__btn">Оставить заявку</button>
+			</div>
+
+			<div class="rooms2__images">
+				<img src="img/main-img-desk2.jpg" alt="" class="rooms2__image click1">
+				<div class="rooms2__images2 container">
+					<img src="img/slider-rooms2-2.jpg" alt="" class="rooms2__image2 click2">
+					<img src="img/slider-rooms2.jpg" alt="" class="rooms2__image2 click3">
+					<div class="rooms2__text1">
+						<p class="p0 rooms2__text1__head">Ломоносов В</p>
+						<div class="rooms2__flex">
+							<p class="p0 rooms2__text1__metres">40 кв. м.</p>
+							<p class="p0 rooms2__text1__quantity">до 30 человек</p>
+						</div>
+					</div>
+					<div class="rooms2__text2">
+						<p class="p0 rooms2__text2__head">Ломоносов С</p>
+						<div class="rooms2__flex2">
+							<p class="p0 rooms2__text2__metres">35 кв. м.</p>
+							<p class="p0 rooms2__text2__quantity">до 30 человек</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rooms3 container">
+			<div class="rooms3__info container">
+				<p class="p0 rooms3__head">Ломоносов D</p>
+				<p class="p0 rooms3__metres">40 кв.м</p>
+				<p class="p0 rooms3__quantity">до 30 человек</p>
+				<p class="p0 rooms3__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+			</div>
+
+			<div class="rooms3__more container">
+				<a href="files/sample.pdf" download class="rooms3__download-link"><p class="p0 rooms3__download">Скачать технический райдер</p></a>
+				<p class="p0 rooms3__sub">Наличие полного перечня технического оборудования уточняется на технической встрече.</p>
+				<button class="rooms3__btn">Оставить заявку</button>
+			</div>
+
+			<div class="rooms3__images">
+				<img src="img/main-img-desk3.jpg" alt="" class="rooms3__image click1">
+			</div>
+		</section>
+
+		<section class="rooms4 container">
+			<div class="rooms4__info container">
+				<p class="p0 rooms4__head">Павлов Студио</p>
+				<p class="p0 rooms4__metres">26 кв.м</p>
+				<p class="p0 rooms4__quantity">до 20 человек</p>
+				<p class="p0 rooms4__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+			</div>
+
+			<div class="rooms4__more container">
+				<a href="files/sample.pdf" download class="rooms4__download-link"><p class="p0 rooms4__download">Скачать технический райдер</p></a>
+				<p class="p0 rooms4__sub">Наличие полного перечня технического оборудования уточняется на технической встрече.</p>
+				<button class="rooms4__btn">Оставить заявку</button>
+			</div>
+
+			<div class="rooms4__images">
+				<img src="img/main-img-desk4.jpg" alt="" class="rooms4__image click1">
+			</div>
+		</section>
+
+		<section class="rooms5 container">
+			<div class="rooms5__info container">
+				<p class="p0 rooms5__head">Эйнштен Area</p>
+				<p class="p0 rooms5__metres">40 кв.м</p>
+				<p class="p0 rooms5__quantity">до 25 человек</p>
+				<p class="p0 rooms5__text">Подходит для проведения таких мероприятий, как cеминары, тренинги, мастер-классы, конференции, лекции</p>
+			</div>
+
+			<div class="rooms5__more container">
+				<a href="files/sample.pdf" download class="rooms5__download-link"><p class="p0 rooms5__download">Скачать технический райдер</p></a>
+				<p class="p0 rooms5__sub">Наличие полного перечня технического оборудования уточняется на технической встрече.</p>
+				<button class="rooms5__btn">Оставить заявку</button>
+			</div>
+
+			<div class="rooms5__images">
+				<img src="img/main-img-desk5.jpg" alt="" class="rooms5__image click1">
+			</div>
+		</section>
+
+		<section class="dop container">
+			<h2 class="p0 dop__title">Дополнительные услуги</h2>
+			<div class="dop__flex">
+				<div class="dop__service1">
+					<p class="p0 dop__service1-head">Разработка концепции мероприятия</p>
+					<p class="p0 dop__service1-text1">Наш персонал обладает многолетним опытом организации и планирования мероприятий, технического сопровождения и обслуживания. Исходя из ваших потребностей, менеджеры разработают креативную концепцию вашего события.</p>
+					<p class="p0 dop__service1-text2">Каждое мероприятие, создаваемое нашей командой, уникально как по форме, так и по его содержанию.</p>
+					<p class="p0 dop__service1-text3">Максимальное внимание к деталям, четкость и упорядоченность в разработке сценария мероприятия определяют успех и запоминаемость</p>
+				</div>
+				<div class="dop__service2">
+					<p class="p0 dop__service2-head">Техническое сопровождение</p>
+					<p class="p0 dop__service2-text1">Наша команда оказывает комплексные услуги по инсталляции: подбор оборудования, выезд специалистов на площадку для установки, настройки и обслуживания звуковых, световых и видео систем во время мероприятия.</p>
+					<p class="p0 dop__service2-text2">В зависимости от особенностей Вашего мероприятия , мы подберем самую оптимальную, с учетом всех условий, аппаратуру. Имея в своем штате опытных специалистов, привыкших решать самые сложные задачи, мы можем гарантировать, что устанавливаемые нами звуковое, световое и видео оборудование будет раскрывать свой потенциал на все 100%.</p>
+					<button class="dop__service2-btn">Добавить в заявку</button>
+				</div>
+				<div class="dop__service3">
+					<p class="p0 dop__service3-head">Фото и видео съемка</p>
+					<p class="p0 dop__service3-text1">Смелые, интересные проекты любой сложности.</p>
+					<p class="p0 dop__service3-text2">Каждая наша фото и видеосъемка– это уникальная яркая идея, представленная в интересной зрелищной форме. Используем только профессиональное современное оборудование на каждом этапе производства.</p>
+					<p class="p0 dop__service3-text3">Мы предлагаем:​</p>
+					<ul class="p0 dop__service3-list">
+						<li class="p0 dop__service3-item">2-х камерную съемку (FULL HD/4K),</li>
+						<li class="p0 dop__service3-item">Световое и звуковое оборудование</li>
+						<li class="p0 dop__service3-item">Онлайн-трансляцию</li>
+						<li class="p0 dop__service3-item">Дикторское озвучивание</li>
+						<li class="p0 dop__service3-item">Фотосъемку</li>
+					</ul>
+					<button class="dop__service3-btn">Добавить в заявку</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery container">
+			<h2 class="p0 gallery__head">Галерея</h2>
+			<div class="gallery__images">
+				<ul class="gallery__images__list p0">
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					<li class="gallery__images__item">
+						<img src="img/children.jpg" alt="" class="gallery__image">
+					</li>
+					
+				</ul>
+			</div>
+			<div class="gallery__images__arrows container">
+		        <button class="gallery__images-arrow1 btn-back5" onclick="minusSlide2()"></button>
+
+				<div class="gallery__images__buttons">
+			        <button class="gallery__images-button" onclick="currentSlide2(1)"></button>
+			        <button class="gallery__images-button" onclick="currentSlide2(2)"></button>
+			        <button class="gallery__images-button" onclick="currentSlide2(3)"></button>
+			        <button class="gallery__images-button" onclick="currentSlide2(4)"></button>
+			        <button class="gallery__images-button" onclick="currentSlide2(5)"></button>
+		    	</div>
+
+		        <button class="gallery__images-arrow2 btn-next5" onclick="plusSlide2()"></button>
+			</div>
+
+		</section>
+		
+		<section class="form container">
+			<h2 class="p0 form__head">Оставить заявку</h2>
+			<form action="send.php" class="form__form" method="post">
+				<div class="form__room">
+					<p class="p0 form__room__title">Выбор зала</p>
+					<label class="form__label">
+						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Gagarin Hall
+					</label>
+					<label class="form__label">
+						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов BC
+					</label>
+					<label class="form__label">
+						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов D
+					</label>
+					<label class="form__label">
+						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Павлов Studio
+					</label>
+					<label class="form__label">
+						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Эйнштейн Area
+					</label>
+				</div>
+				<div class="form__serv">
+					<p class="p0 form__serv__title2">Выбор услуги</p>
+					<label class="form__label">
+						<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Gagarin Hall
+					</label>
+					<label class="form__label">
+						<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Ломоносов BC
+					</label>
+				</div>
+				<div class="form__inputs">
+					<div class="form__inputs-wrap1">
+						<label class="form__inputs-label1" for="tel">Телефон</label>
+						<input id="tel" type="tel" class="form__inputs-room1" placeholder="+7 (___) ___-__-__"></input>
+					</div>
+					<div class="form__inputs-wrap2">
+						<label class="form__inputs-label2" for="email">E-mail</label>
+						<input type="email" for="email" class="form__inputs-room1"></input>
+					</div>
+				</div>
+				<button class="form__btn">Оставить заявку</button>
+				<label class="form__label">
+					<input type="checkbox" class="form__check"><span class="form__ckeck-span"></span>Я согласен с<a href="#"> условиями обработки персональных данных</a>
+				</label>
+			</form>
+		</section>
+
+		<section class="contacts">
+			<div class="contacts_info">
+				<div class="contacts__info-nobg container">
+					<div class="contacts__mains">
+						<h2 class="p0 contacts_info-head">Контакты</h2>
+						<p class="contacts__info-city">Москва, Ярославское шоссе, 124</p>
+						<p class="p0 contacts__tel"><span class="tel-hidden">Тел.:</span><a class="contacts__city-link" href="tel:+79253443134"> +7 (925) 344-31-34</a></p>
+						<p class="p0 contacts__email">E-mail:<a class="contacts__email-link" href="mailto:k.frolov@m-c-m-c.ru"> k.frolov@m-c-m-c.ru</a></p>
+					</div>
+					<div class="contacts__links">
+						<a href="#" class="contacts__logo-link"><img src="img/mmkc-logo-big.png" alt="" class="contacts__logo"></a>
+						<a href="m-c-m-c.ru" class="p0 contacts__site">m-c-m-c.ru</a>
+					</div>
+				</div>
+				<div class="contacts__social">
+					<a href="#" class="contacts__social-link"><img src="img/vk.png" alt="" class="contacts__social-image"></a>
+					<a href="#" class="contacts__social-link"><img src="img/fb.png" alt="" class="contacts__social-image"></a>
+					<a href="#" class="contacts__social-link"><img src="img/inst.png" alt="" class="contacts__social-image"></a>
+				</div>
+			</div>
+			<div class="contacts__map">
+				<iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10646.015019791834!2d37.71590177558607!3d55.879165214993094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53156a19e64fd%3A0xae3e08d45b946654!2z0K_RgNC-0YHQu9Cw0LLRgdC60L7QtSDRiC4sIDEyNCwg0JzQvtGB0LrQstCwLCAxMjkzNDc!5e0!3m2!1sru!2sru!4v1559806906912!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__nobg container">
+			<p class="p0 footer__copy">&#169; 2014-2019 Gagarin Space</p>
+		</div>
+	</footer>
+
+	<script src="scripts/spoiler.js"></script>
+	<script src="scripts/first-slider.js"></script>
+	<script src="scripts/events.js"></script>
+	<script src="scripts/gallery.js"></script>
+	<script src="scripts/rooms-modal.js"></script>
+	<script src="scripts/modal-slide-show.js"></script>
+</body>
+</html>
