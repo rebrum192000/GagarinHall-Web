@@ -904,9 +904,22 @@ button{
 	}
 }
 
-
-
-
+.rooms__download:hover,
+.rooms2__download:hover,
+.rooms3__download:hover,
+.rooms4__download:hover,
+.rooms5__download:hover{
+	border: 4px solid #AE4659;
+}
+.rooms__btn:hover,
+.rooms2__btn:hover,
+.rooms3__btn:hover,
+.rooms4__btn:hover,
+.rooms5__btn:hover,
+.form__btn:hover{
+	background-color: #A61F37;
+	border: 16px solid #A61F37;
+}
 .rooms{
 	padding-top: 55px;
 	padding-bottom: 35px;
@@ -5687,6 +5700,12 @@ button{
 	}
 }
 
+
+
+.form{
+	padding-bottom: 125px;
+}
+
 .form__btn{
 	background: #AE4659;
 	border: none;
@@ -5696,45 +5715,7 @@ button{
 	line-height: 32px;
 	font-family: 'Roboto Medium';
 	padding: 4px 69px;
-}
-@media(min-width: 640px){
-	.form__btn{
-		background: #AE4659;
-		border: none;
-		font: inherit;
-		color: #fff;
-		font-size: 24px;
-		line-height: 32px;
-		font-family: 'Roboto Medium';
-		padding: 4px 50px;
-		width: 295px;
-	}
-}
-@media(min-width: 1300px){
-	.form__btn{
-		background: #AE4659;
-		border: none;
-		font: inherit;
-		color: #fff;
-		font-size: 24px;
-		line-height: 32px;
-		font-family: 'Roboto Medium';
-		padding: 4px 50px;
-		width: 340px;
-	}
-}
-@media(min-width: 1800px){
-	.form__btn{
-		background: #AE4659;
-		border: none;
-		font: inherit;
-		color: #fff;
-		font-size: 24px;
-		line-height: 32px;
-		font-family: 'Roboto Medium';
-		padding: 4px 50px;
-		width: 340px;
-	}
+	margin-bottom: 35px;
 }
 .form__room-room,
 .form__serv-room,
@@ -5750,6 +5731,7 @@ button{
     border: 1px solid #000;
     width: 24px;
     height: 24px;
+    margin-right: 10px;
     box-sizing: border-box;
     vertical-align: middle;
     cursor: pointer;
@@ -5775,13 +5757,577 @@ button{
 	font-size: 36px;
 	line-height: 48px;
 	font-family: 'Jura Bold';
+	padding-top: 100px;
+	margin-bottom: 50px;
 }
 
 .form__room__title{
 	font-size: 36px;
 	line-height: 48px;
 	color: #323232;
+	font-family: 'Roboto Bold';
+	margin-bottom: 20px;
 }
+.form__label{
+	line-height: 32px;
+	font-size: 24px;
+	font-family: 'Roboto Medium';
+	margin-bottom: 15px;
+}
+.form__label2{
+	line-height: 24px;
+	font-size: 18px;
+	font-family: 'Roboto Medium';
+	margin-bottom: 15px;
+}
+.form__serv__title2{
+	line-height: 48px;
+	font-size: 36px;
+	font-family: 'Roboto Bold';
+	margin-top: 55px;
+	margin-bottom: 25px;
+}
+.form__room{
+	display: flex;
+	flex-direction: column;
+}
+.form__serv{
+	display: flex;
+	flex-direction: column;
+}
+.form__inputs-label1{
+	line-height: 32px;
+	font-size: 24px;
+	font-family: 'Roboto Medium';
+	display: block;
+	margin-bottom: 8px;
+}
+.form__inputs-label2{
+	line-height: 32px;
+	font-size: 24px;
+	font-family: 'Roboto Medium';
+	display: block;
+	margin-bottom: 8px;
+}
+.form__inputs-room1{
+	background: #E5E5E5;
+	height: 25px;
+	width: 296px;
+	border: none;
+	border-bottom: 2px solid #000000;
+	font: inherit;
+	padding-left: 10px;
+}
+.form__inputs-wrap2{
+	margin-top: 35px;
+	margin-bottom: 60px;
+}
+.form__inputs{
+	margin-top: 75px;
+}
+.form__label3{
+	line-height: 24px;
+	font-size: 18px;
+	font-family: 'Roboto Medium';
+	width: 200px;
+}
+.form__check-link{
+	line-height: 24px;
+	font-size: 18px;
+	font-family: 'Roboto Medium';
+	color: #323232;
+}
+.form__check-link:hover{
+	color: #AE4659;
+}
+@media(min-width: 640px){
+	.form{
+		padding-bottom: 125px;
+	}
+	.form__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.form__btn{
+		background: #AE4659;
+		border: none;
+		font: inherit;
+		color: #fff;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: 'Roboto Medium';
+		padding: 4px 50px;
+		width: 295px;
+		order: 30;
+	}
+
+	.form__room-room,
+	.form__serv-room,
+	.form__check {
+		position: absolute;
+	    left: -99999px; 
+	}
+	.form__ckeck-span {
+		display: inline-block;
+	    position: relative;
+	    margin: 0;
+	    background-color: transparent;
+	    border: 1px solid #000;
+	    width: 24px;
+	    height: 24px;
+	    margin-right: 10px;
+	    box-sizing: border-box;
+	    vertical-align: middle;
+	    cursor: pointer;
+	}
+	.form__room-room:checked + .form__ckeck-span::before,
+	.form__serv-room:checked + .form__ckeck-span::before,
+	.form__check:checked + .form__ckeck-span::before {
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    background-image: url("img/check.png");
+	    background-repeat: no-repeat;
+	    background-position: center top;
+	    cursor: pointer;
+	    z-index: 2;
+	}
+
+	.form__head{
+		font-size: 36px;
+		line-height: 48px;
+		font-family: 'Jura Bold';
+		padding-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.form__room__title{
+		font-size: 36px;
+		line-height: 48px;
+		color: #323232;
+		font-family: 'Roboto Bold';
+		margin-bottom: 20px;
+	}
+	.form__label{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__label2{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__serv__title2{
+		line-height: 48px;
+		font-size: 36px;
+		font-family: 'Roboto Bold';
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.form__room{
+		display: flex;
+		flex-direction: column;
+	}
+	.form__serv{
+		display: flex;
+		flex-direction: column;
+	}
+	.form__inputs-label1{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-label2{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-room1{
+		background: #E5E5E5;
+		height: 25px;
+		width: 296px;
+		border: none;
+		border-bottom: 2px solid #000000;
+		font: inherit;
+		padding-left: 10px;
+	}
+	.form__inputs-wrap2{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.form__inputs-wrap1{
+		margin-right: 10px;
+	}
+	.form__inputs{
+		margin-top: 75px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.form__label3{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		width: 200px;
+		order: 29;
+		margin-right: 65%;
+		margin-bottom: 30px;
+	}
+	.form__check-link{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		color: #323232;
+	}
+	.form__last-wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media(min-width: 1300px){
+	.form{
+		padding-bottom: 125px;
+	}
+	.form__wrapper{
+		display: flex;
+		justify-content: normal;
+	}
+	.form__btn{
+		background: #AE4659;
+		border: none;
+		font: inherit;
+		color: #fff;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: 'Roboto Medium';
+		padding: 4px 50px;
+		width: 295px;
+		order: 30;
+	}
+
+	.form__room-room,
+	.form__serv-room,
+	.form__check {
+		position: absolute;
+	    left: -99999px; 
+	}
+	.form__ckeck-span {
+		display: inline-block;
+	    position: relative;
+	    margin: 0;
+	    background-color: transparent;
+	    border: 1px solid #000;
+	    width: 24px;
+	    height: 24px;
+	    margin-right: 10px;
+	    box-sizing: border-box;
+	    vertical-align: middle;
+	    cursor: pointer;
+	}
+	.form__room-room:checked + .form__ckeck-span::before,
+	.form__serv-room:checked + .form__ckeck-span::before,
+	.form__check:checked + .form__ckeck-span::before {
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    background-image: url("img/check.png");
+	    background-repeat: no-repeat;
+	    background-position: center top;
+	    cursor: pointer;
+	    z-index: 2;
+	}
+
+	.form__head{
+		font-size: 48px;
+		line-height: 64px;
+		font-family: 'Jura Bold';
+		padding-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.form__room__title{
+		font-size: 36px;
+		line-height: 48px;
+		color: #323232;
+		font-family: 'Roboto Bold';
+		margin-bottom: 20px;
+	}
+	.form__label{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__label2{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__serv__title2{
+		line-height: 48px;
+		font-size: 36px;
+		font-family: 'Roboto Bold';
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.form__room{
+		display: flex;
+		flex-direction: column;
+		margin-right: 265px;
+	}
+	.form__serv{
+		display: flex;
+		flex-direction: column;
+	}
+	.form__inputs-label1{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-label2{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-room1{
+		background: #E5E5E5;
+		height: 25px;
+		width: 296px;
+		border: none;
+		border-bottom: 2px solid #000000;
+		font: inherit;
+		padding-left: 10px;
+	}
+	.form__inputs-wrap2{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.form__inputs-wrap1{
+		margin-right: 30px;
+	}
+	.form__inputs{
+		margin-top: 75px;
+		display: flex;
+		justify-content: normal;
+	}
+	.form__label3{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		width: 200px;
+		order: 29;
+		margin-right: 65%;
+		margin-bottom: 30px;
+	}
+	.form__check-link{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		color: #323232;
+	}
+	.form__last-wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.form__btn{
+		background: #AE4659;
+		border: none;
+		font: inherit;
+		color: #fff;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: 'Roboto Medium';
+		padding: 4px 50px;
+		width: 340px;
+	}
+}
+@media(min-width: 1800px){
+	.form{
+		padding-bottom: 125px;
+	}
+	.form__wrapper{
+		display: flex;
+		justify-content: normal;
+	}
+	.form__btn{
+		background: #AE4659;
+		border: none;
+		font: inherit;
+		color: #fff;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: 'Roboto Medium';
+		padding: 4px 50px;
+		width: 340px;
+	}
+
+	.form__room-room,
+	.form__serv-room,
+	.form__check {
+		position: absolute;
+	    left: -99999px; 
+	}
+	.form__ckeck-span {
+		display: inline-block;
+	    position: relative;
+	    margin: 0;
+	    background-color: transparent;
+	    border: 1px solid #000;
+	    width: 24px;
+	    height: 24px;
+	    margin-right: 10px;
+	    box-sizing: border-box;
+	    vertical-align: middle;
+	    cursor: pointer;
+	}
+	.form__room-room:checked + .form__ckeck-span::before,
+	.form__serv-room:checked + .form__ckeck-span::before,
+	.form__check:checked + .form__ckeck-span::before {
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    background-image: url("img/check.png");
+	    background-repeat: no-repeat;
+	    background-position: center top;
+	    cursor: pointer;
+	    z-index: 2;
+	}
+
+	.form__head{
+		font-size: 48px;
+		line-height: 64px;
+		font-family: 'Jura Bold';
+		padding-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.form__room__title{
+		font-size: 36px;
+		line-height: 48px;
+		color: #323232;
+		font-family: 'Roboto Bold';
+		margin-bottom: 20px;
+	}
+	.form__label{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__label2{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		margin-bottom: 15px;
+	}
+	.form__serv__title2{
+		line-height: 48px;
+		font-size: 36px;
+		font-family: 'Roboto Bold';
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.form__room{
+		display: flex;
+		flex-direction: column;
+		margin-right: 430px;
+	}
+	.form__serv{
+		display: flex;
+		flex-direction: column;
+	}
+	.form__inputs-label1{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-label2{
+		line-height: 32px;
+		font-size: 24px;
+		font-family: 'Roboto Medium';
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form__inputs-room1{
+		background: #E5E5E5;
+		height: 25px;
+		width: 296px;
+		border: none;
+		border-bottom: 2px solid #000000;
+		font: inherit;
+		padding-left: 10px;
+	}
+	.form__inputs-wrap2{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.form__inputs-wrap1{
+		margin-right: 30px;
+	}
+	.form__inputs{
+		margin-top: 75px;
+		display: flex;
+		justify-content: normal;
+	}
+	.form__label3{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		width: 200px;
+		order: 29;
+		margin-right: 85%;
+		margin-bottom: 30px;
+	}
+	.form__check-link{
+		line-height: 24px;
+		font-size: 18px;
+		font-family: 'Roboto Medium';
+		color: #323232;
+	}
+	.form__last-wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.form__btn{
+		background: #AE4659;
+		border: none;
+		font: inherit;
+		color: #fff;
+		font-size: 24px;
+		line-height: 32px;
+		font-family: 'Roboto Medium';
+		padding: 4px 50px;
+		width: 340px;
+	}
+}
+
+
+
 
 
 
@@ -5802,7 +6348,7 @@ button{
 }
 .contacts__site{
 	display: block;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .contacts_info-head{
 	font-size: 36px;
@@ -5819,12 +6365,24 @@ button{
 	line-height: 32px;
 	font-family: 'Roboto Medium';
 }
+.contacts__social-link:hover{
+	opacity: 0.5;
+}
 .contacts__info-city{
 	margin: 0;
 }
 .contacts__tel{
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+.contacts__email-link:hover,
+.contacts__city-link:hover,
+.contacts__site:hover{
+	text-decoration: underline;
+}
+
+.contacts__logo-link:hover{
+	opacity: 0.5;
 }
 .contacts__logo{
 	margin-top: 10px;
@@ -5871,7 +6429,7 @@ button{
 	}
 	.contacts__site{
 		display: block;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	.contacts_info-head{
 		font-size: 36px;
@@ -5950,7 +6508,7 @@ button{
 	}
 	.contacts__site{
 		display: block;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	.contacts_info-head{
 		display: none;
@@ -6044,7 +6602,7 @@ button{
 	}
 	.contacts__site{
 		display: block;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	.contacts_info-head{
 		display: none;
@@ -6137,4 +6695,27 @@ button{
 	background: rgba(0, 0, 0, 0.5);
 	z-index: 300;
 	display: none;
+}
+
+
+.dop__service3-btn:hover,
+.dop__service2-btn:hover{
+	opacity: 0.5;
+}
+
+.header__tel-link:hover{
+	text-decoration: underline;
+}
+
+.rooms__image,
+.rooms__image2,
+.rooms2__image,
+.rooms2__image2{
+	cursor: pointer;
+}
+.rooms__image:hover,
+.rooms__image2:hover,
+.rooms2__image:hover,
+.rooms2__image2:hover{
+	opacity: 0.8;
 }

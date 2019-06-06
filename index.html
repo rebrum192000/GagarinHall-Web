@@ -21,16 +21,16 @@
 			<nav class="header__nav">
 				<ul class="nav__list p0">
 					<li class="nav__item">
-						<a href="#about" class="nav__link">Залы</a>
+						<a href="#rooms" class="nav__link">Залы</a>
 					</li>
 					<li class="nav__item">
-						<a href="#why" class="nav__link">Услуги</a>
+						<a href="#services" class="nav__link">Услуги</a>
 					</li>
 					<li class="nav__item">
-						<a href="#projects" class="nav__link">Галерея</a>
+						<a href="#gallery" class="nav__link">Галерея</a>
 					</li>
 					<li class="nav__item nav__item__success">
-						<a href="#success" class="nav__link">Контакты</a>
+						<a href="#contacts" class="nav__link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -116,7 +116,7 @@
 			<p class="about__text3 p0">Оснащением Gagarin Space занималась компания «Техника и Технологии Театра» — автор проекта Концертного зала Крокус Сити Холл.</p>
 		</section>
 
-		<section class="rooms container">
+		<section id="rooms" class="rooms container">
 			<h2 class="p0 rooms__title container">Залы</h2>
 
 			<div class="rooms__info container">
@@ -347,7 +347,7 @@
 			</div>
 		</section>
 
-		<section class="dop container">
+		<section id="services" class="dop container">
 			<h2 class="p0 dop__title">Дополнительные услуги</h2>
 			<div class="dop__flex">
 				<div class="dop__service1">
@@ -379,7 +379,7 @@
 			</div>
 		</section>
 
-		<section class="gallery container">
+		<section id="gallery" class="gallery container">
 			<h2 class="p0 gallery__head">Галерея</h2>
 			<div class="gallery__images">
 				<ul class="gallery__images__list p0">
@@ -447,35 +447,37 @@
 
 		</section>
 		
-		<section class="form container">
+		<section id="form" class="form container">
 			<h2 class="p0 form__head">Оставить заявку</h2>
 			<form action="send.php" class="form__form" method="post">
-				<div class="form__room">
-					<p class="p0 form__room__title">Выбор зала</p>
-					<label class="form__label">
-						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Gagarin Hall
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов BC
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов D
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Павлов Studio
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Эйнштейн Area
-					</label>
-				</div>
-				<div class="form__serv">
-					<p class="p0 form__serv__title2">Выбор услуги</p>
-					<label class="form__label">
-						<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Gagarin Hall
-					</label>
-					<label class="form__label">
-						<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Ломоносов BC
-					</label>
+				<div class="form__wrapper">
+					<div class="form__room">
+						<p class="p0 form__room__title">Выбор зала</p>
+						<label class="form__label">
+							<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Gagarin Hall
+						</label>
+						<label class="form__label">
+							<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов BC
+						</label>
+						<label class="form__label">
+							<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Ломоносов D
+						</label>
+						<label class="form__label">
+							<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Павлов Studio
+						</label>
+						<label class="form__label">
+							<input type="checkbox" class="form__room-room"><span class="form__ckeck-span"></span>Эйнштейн Area
+						</label>
+					</div>
+					<div class="form__serv">
+						<p class="p0 form__serv__title2">Выбор услуги</p>
+						<label class="form__label2">
+							<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Техническое сопровождение
+						</label>
+						<label class="form__label2">
+							<input type="checkbox" class="form__serv-room"><span class="form__ckeck-span"></span>Фото- и видео- съемка
+						</label>
+					</div>
 				</div>
 				<div class="form__inputs">
 					<div class="form__inputs-wrap1">
@@ -484,17 +486,19 @@
 					</div>
 					<div class="form__inputs-wrap2">
 						<label class="form__inputs-label2" for="email">E-mail</label>
-						<input type="email" for="email" class="form__inputs-room1"></input>
+						<input type="email" for="email" class="form__inputs-room1" placeholder="example@email.com"></input>
 					</div>
 				</div>
-				<button class="form__btn">Оставить заявку</button>
-				<label class="form__label">
-					<input type="checkbox" class="form__check"><span class="form__ckeck-span"></span>Я согласен с<a href="#"> условиями обработки персональных данных</a>
-				</label>
+				<div class="form__last-wrap">
+					<button class="form__btn">Оставить заявку</button>
+					<label class="form__label3">
+						<input type="checkbox" class="form__check"><span class="form__ckeck-span"></span>Я согласен с<a class="form__check-link" href="#"> условиями обработки персональных данных</a>
+					</label>
+				</div>
 			</form>
 		</section>
 
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="contacts_info">
 				<div class="contacts__info-nobg container">
 					<div class="contacts__mains">
