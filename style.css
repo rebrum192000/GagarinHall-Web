@@ -73,19 +73,19 @@ button{
 	        box-sizing: border-box;
 	margin: 0 auto;
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.container {
 		max-width: 608px;
 		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 	.container {
 		max-width: 1176px;
 		margin: 0 auto;
 	}
 } 
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 	.container {
 		max-width: 1565px;
 		margin: 0 auto;
@@ -180,7 +180,7 @@ button{
 	margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1070px) {
+@media (min-width: 1070px) {
 	.header__flex{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -257,7 +257,7 @@ button{
 		display: none;
 	}
 } 
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 	.header__wrap{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -550,7 +550,7 @@ button{
 	margin: 0 7px;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.slide__items{
 		position: relative;
 	}
@@ -768,7 +768,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (min-width: 1070px)  {
+@media (min-width: 1070px)  {
 	.slide__items{
 		position: relative;
 	}
@@ -969,7 +969,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 	.slide__items{
 		position: relative;
 	}
@@ -1219,7 +1219,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (min-width: 1650px) {
+@media (min-width: 1650px) {
 	.slide__items{
 		position: relative;
 	}
@@ -1486,13 +1486,13 @@ button{
 	margin-bottom: 15px;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.about{
 		padding-bottom: 60px;
 	}
 }
 
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 	.about{
 		padding-top: 70px;
 		padding-right: 100px;
@@ -1510,7 +1510,7 @@ button{
 		margin-bottom: 25px;
 	}
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 	.about{
 		padding-top: 55px;
 		padding-right: 300px;
@@ -1688,7 +1688,7 @@ button{
 	display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
 	.rooms__images{
 		position: absolute;
@@ -1836,7 +1836,7 @@ button{
 	}
 
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 
 	.rooms__images{
 		position: absolute;
@@ -1991,7 +1991,7 @@ button{
 		margin-top: 25px;
 	}	
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 
 	.rooms__images{
 		position: absolute;
@@ -2255,7 +2255,7 @@ button{
 	height: 25px;
 	margin: 0 7px;
 }
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.rooms__modal{
 		display: none;
 		position: fixed;
@@ -2359,7 +2359,7 @@ button{
 		margin: 0 7px;
 	}
 }
-@media(screen and min-width: 1070px){
+@media(min-width: 1070px){
 	.rooms__modal{
 		display: none;
 		position: fixed;
@@ -2463,7 +2463,7 @@ button{
 		margin: 0 7px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.rooms__modal{
 		display: none;
 		position: fixed;
@@ -2790,7 +2790,7 @@ button{
 }
 
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
 	.rooms2__images{
 		position: absolute;
@@ -3022,7 +3022,7 @@ button{
 		font-family: 'Jura Bold';
 	}
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 
 	.rooms2__images{
 		position: absolute;
@@ -3269,7 +3269,7 @@ button{
 		font-family: 'Jura Bold';
 	}
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 
 	.rooms2__images{
 		position: absolute;
@@ -3621,7 +3621,7 @@ button{
 	height: 25px;
 	margin: 0 7px;
 }
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.rooms2__modal{
 		display: none;
 		position: fixed;
@@ -3725,7 +3725,7 @@ button{
 		margin: 0 7px;
 	}
 }
-@media(screen and min-width: 1070px){
+@media(min-width: 1070px){
 	.rooms2__modal{
 		display: none;
 		position: fixed;
@@ -3829,7 +3829,7 @@ button{
 		margin: 0 7px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.rooms2__modal{
 		display: none;
 		position: fixed;
@@ -4088,7 +4088,7 @@ button{
 	display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
 	.rooms3__images{
 		position: absolute;
@@ -4236,7 +4236,7 @@ button{
 	}
 
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 
 	.rooms3__images{
 		position: absolute;
@@ -4391,7 +4391,7 @@ button{
 		margin-top: 25px;
 	}	
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 
 	.rooms3__images{
 		position: absolute;
@@ -4697,7 +4697,7 @@ button{
 	display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
 	.rooms4__images{
 		position: absolute;
@@ -4845,7 +4845,7 @@ button{
 	}
 
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 
 	.rooms4__images{
 		position: absolute;
@@ -5000,7 +5000,7 @@ button{
 		margin-top: 25px;
 	}	
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 
 	.rooms4__images{
 		position: absolute;
@@ -5307,7 +5307,7 @@ button{
 	display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 
 	.rooms5__images{
 		position: absolute;
@@ -5455,7 +5455,7 @@ button{
 	}
 
 }
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
 
 	.rooms5__images{
 		position: absolute;
@@ -5610,7 +5610,7 @@ button{
 		margin-top: 25px;
 	}	
 }
-@media screen and (min-width: 1800px) {
+@media (min-width: 1800px) {
 
 	.rooms5__images{
 		position: absolute;
@@ -5925,7 +5925,7 @@ button{
 	padding-bottom: 20px;
 }
 
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.events__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -6059,7 +6059,7 @@ button{
 	}
 }
 
-@media(screen and min-width: 1300px){
+@media(min-width: 1300px){
 	.events__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -6196,7 +6196,7 @@ button{
 		padding-bottom: 20px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.events__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -6399,7 +6399,7 @@ button{
 	        border-radius: 50%;
 	background-color: #000;
 }
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.dop{
 		color: #000;
 		padding-bottom: 115px;
@@ -6477,7 +6477,7 @@ button{
 		background-color: #000;
 	}
 }
-@media(screen and min-width: 1300px){
+@media(min-width: 1300px){
 	.dop{
 		color: #000;
 		padding-bottom: 115px;
@@ -6603,7 +6603,7 @@ button{
 		background-color: #000;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.dop{
 		color: #000;
 		padding-bottom: 115px;
@@ -6883,7 +6883,7 @@ button{
 	padding-bottom: 20px;
 }
 
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.gallery__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -7009,7 +7009,7 @@ button{
 	}
 }
 
-@media(screen and min-width: 1300px){
+@media(min-width: 1300px){
 	.gallery__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -7137,7 +7137,7 @@ button{
 		padding-bottom: 20px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.gallery__images__arrows{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -7417,7 +7417,7 @@ button{
 .form__check-link:hover{
 	color: #AE4659;
 }
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.form{
 		padding-bottom: 125px;
 	}
@@ -7609,7 +7609,7 @@ button{
 		        flex-wrap: wrap;
 	}
 }
-@media(screen and min-width: 1300px){
+@media(min-width: 1300px){
 	.form{
 		padding-bottom: 125px;
 	}
@@ -7813,7 +7813,7 @@ button{
 		width: 340px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.form{
 		padding-bottom: 125px;
 	}
@@ -8102,7 +8102,7 @@ button{
 	display: block;
 }
 
-@media(screen and min-width: 640px){
+@media(min-width: 640px){
 	.contacts_info{
 		background-color: #808080;
 		color: #fff;
@@ -8178,7 +8178,7 @@ button{
 		height: 199px;
 	}
 }
-@media(screen and min-width: 1300px){
+@media(min-width: 1300px){
 	.contacts{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -8303,7 +8303,7 @@ button{
 		height: 199px;
 	}
 }
-@media(screen and min-width: 1800px){
+@media(min-width: 1800px){
 	.contacts{
 		display: -webkit-box;
 		display: -webkit-flex;
