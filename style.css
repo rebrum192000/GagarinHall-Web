@@ -73,13 +73,13 @@ button{
 	        box-sizing: border-box;
 	margin: 0 auto;
 }
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 1299px) and (min-width: 640px) {
 	.container {
 		max-width: 608px;
 		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 1799px) {
 	.container {
 		max-width: 1176px;
 		margin: 0 auto;
@@ -550,7 +550,7 @@ button{
 	margin: 0 7px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 1069px) and (min-width: 640px) {
 	.slide__items{
 		position: relative;
 	}
@@ -616,7 +616,7 @@ button{
 		100% { opacity: 1; width: 0px}
 	}
 
-.slide__texts2{
+	.slide__texts2{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -633,7 +633,7 @@ button{
 		    -ms-flex-order: 1;
 		        order: 1;
 	}
-.slide__texts3{
+	.slide__texts3{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -650,7 +650,7 @@ button{
 		    -ms-flex-order: 1;
 		        order: 1;
 	}
-.slide__texts4{
+	.slide__texts4{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -667,7 +667,7 @@ button{
 		    -ms-flex-order: 1;
 		        order: 1;
 	}
-.slide__texts5{
+	.slide__texts5{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -768,7 +768,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (min-width: 1070px) {
+@media screen and (max-width: 1299px) and (min-width: 1070px)  {
 	.slide__items{
 		position: relative;
 	}
@@ -969,7 +969,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1649px) and (min-width: 1300px) {
 	.slide__items{
 		position: relative;
 	}
@@ -1020,7 +1020,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts2{
+	.slide__texts2{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1049,7 +1049,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts3{
+	.slide__texts3{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1078,7 +1078,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts4{
+	.slide__texts4{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1107,7 +1107,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts5{
+	.slide__texts5{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1270,7 +1270,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts2{
+	.slide__texts2{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1299,7 +1299,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts3{
+	.slide__texts3{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1328,7 +1328,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts4{
+	.slide__texts4{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
@@ -1357,7 +1357,7 @@ button{
 		height: 104px;
 		background: url('img/mmkc-logo.png');
 	}
-.slide__texts5{
+	.slide__texts5{
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		position: absolute;
