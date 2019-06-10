@@ -383,16 +383,16 @@ button{
 	width: 100%;
 	height: 220px;
 	background: url('img/bg1.jpg');
-	-webkit-animation: scaleDown 2s;
-	        animation: scaleDown 2s;
+	-webkit-animation: scaleDown1 2s;
+	        animation: scaleDown1 2s;
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
 }
-@-webkit-keyframes scaleDown {
+@-webkit-keyframes scaleDown1 {
 	0% { opacity: 1; height: 220px}
 	100% { opacity: 1; height: 0px}
 }
-@keyframes scaleDown {
+@keyframes scaleDown1 {
 	0% { opacity: 1; height: 220px}
 	100% { opacity: 1; height: 0px}
 }
@@ -602,16 +602,16 @@ button{
 		-webkit-transform: scale(-1, -1);
 		    -ms-transform: scale(-1, -1);
 		        transform: scale(-1, -1);
-		-webkit-animation: scaleDown 2s;
-		        animation: scaleDown 2s;
+		-webkit-animation: scaleDown2 2s;
+		        animation: scaleDown2 2s;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
 	}
-	@-webkit-keyframes scaleDown {
+	@-webkit-keyframes scaleDown2 {
 		0% { opacity: 1; width: 100%}
 		100% { opacity: 1; width: 0px}
 	}
-	@keyframes scaleDown {
+	@keyframes scaleDown2 {
 		0% { opacity: 1; width: 100%}
 		100% { opacity: 1; width: 0px}
 	}
