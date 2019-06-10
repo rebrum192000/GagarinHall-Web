@@ -73,13 +73,13 @@ button{
 	        box-sizing: border-box;
 	margin: 0 auto;
 }
-@media screen and (max-width: 1299px) and (min-width: 640px) {
+@media screen and (min-width: 640px) {
 	.container {
 		max-width: 608px;
 		margin: 0 auto;
 	}
 }
-@media screen and (min-width: 1300px) and (max-width: 1799px) {
+@media screen and (min-width: 1300px) {
 	.container {
 		max-width: 1176px;
 		margin: 0 auto;
@@ -550,7 +550,7 @@ button{
 	margin: 0 7px;
 }
 
-@media screen and (max-width: 1069px) and (min-width: 640px) {
+@media screen and (min-width: 640px) {
 	.slide__items{
 		position: relative;
 	}
@@ -768,7 +768,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (max-width: 1299px) and (min-width: 1070px)  {
+@media screen and (min-width: 1070px)  {
 	.slide__items{
 		position: relative;
 	}
@@ -969,7 +969,7 @@ button{
 		background: url("img/arrow.png");
 	}
 }
-@media screen and (max-width: 1649px) and (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
 	.slide__items{
 		position: relative;
 	}
