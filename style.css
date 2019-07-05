@@ -599,6 +599,7 @@ button{
 		left: 99.9%;
 		width: 100%;
 		height: 100%;
+		z-index: 150;
 		-webkit-transform: scale(-1, -1);
 		    -ms-transform: scale(-1, -1);
 		        transform: scale(-1, -1);
@@ -1538,7 +1539,7 @@ button{
 .rooms5__btn:hover,
 .form__btn:hover{
 	background-color: #A61F37;
-	border: 16px solid #A61F37;
+	border: 2px solid #A61F37;
 }
 .rooms{
 	padding-top: 55px;
@@ -1985,11 +1986,20 @@ button{
 		padding: 4px 50px;
 		width: 340px;
 	}
-	.room__desk{
-		display: block;
+	.rooms__more{
+		position: relative;
+	}
+	.rooms .room__desk{
+		display: none;
 		margin-right: 895px;
 		margin-top: 25px;
+		position: absolute;
+		bottom: -100px;
+		left: 0;
 	}	
+	.rooms__btn:hover + .room__desk{
+		display: block;
+	}
 }
 @media (min-width: 1800px) {
 
@@ -2140,10 +2150,16 @@ button{
 		padding: 4px 50px;
 		width: 340px;
 	}
-	.room__desk{
-		display: block;
+	.rooms .room__desk{
+		display: none;
 		margin-right: 1260px;
+		position: absolute;
+		bottom: -100px;
+		left: 0;
 	}	
+	.rooms__btn:hover + .room__desk{
+		display: block;
+	}
 
 }
 
@@ -3172,11 +3188,17 @@ button{
 		padding: 4px 50px;
 		width: 340px;
 	}
-	.room__desk{
-		display: block;
+	.rooms2 .room__desk{
+		display: none;
 		margin-right: 895px;
 		margin-top: 25px;
-	}	
+		position: absolute;
+		bottom: 400px;
+		left: 0;
+	}		
+	.rooms2__btn:hover + .room__desk{
+		display: block;
+	}
 	.rooms2__flex{
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -3418,10 +3440,16 @@ button{
 		padding: 4px 50px;
 		width: 340px;
 	}
-	.room__desk{
-		display: block;
+	.rooms2 .room__desk{
+		display: none;
 		margin-right: 1260px;
+		position: absolute;
+		bottom: 400px;
+		left: 0;
 	}	
+	.rooms2__btn:hover + .room__desk{
+		display: block;
+	}
 
 	.rooms2__flex{
 		display: -webkit-box;
@@ -4244,6 +4272,7 @@ button{
 		right: 20px;
 
 	}
+	
 	.rooms3{
 		position: relative;
 		padding-top: 55px;
@@ -4386,10 +4415,16 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 895px;
 		margin-top: 25px;
+		position: absolute;
+		bottom: 60px;
+		left: 0;
 	}	
+	.rooms3__btn:hover + .room__desk{
+		display: block;
+	}
 }
 @media (min-width: 1800px) {
 
@@ -4541,9 +4576,15 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 1260px;
-	}	
+		position: absolute;
+		bottom: 60px;
+		left: 0;
+	}		
+	.rooms3__btn:hover + .room__desk{
+		display: block;
+	}
 
 }
 
@@ -4995,10 +5036,16 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 895px;
 		margin-top: 25px;
-	}	
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+	}		
+	.rooms4__btn:hover + .room__desk{
+		display: block;
+	}
 }
 @media (min-width: 1800px) {
 
@@ -5150,9 +5197,15 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 1260px;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
 	}	
+	.rooms4__btn:hover + .room__desk{
+		display: block;
+	}
 
 }
 
@@ -5605,10 +5658,16 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 895px;
 		margin-top: 25px;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
 	}	
+	.rooms5__btn:hover + .room__desk{
+		display: block;
+	}
 }
 @media (min-width: 1800px) {
 
@@ -5760,9 +5819,15 @@ button{
 		width: 340px;
 	}
 	.room__desk{
-		display: block;
+		display: none;
 		margin-right: 1260px;
-	}	
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+	}		
+	.rooms5__btn:hover + .room__desk{
+		display: block;
+	}
 
 }
 
@@ -6399,6 +6464,9 @@ button{
 	        border-radius: 50%;
 	background-color: #000;
 }
+.dop__service1{
+	margin-top: 50px;
+}
 @media(min-width: 640px){
 	.dop{
 		color: #000;
@@ -6413,9 +6481,13 @@ button{
 		width: 440px;
 		margin-top: 70px;
 	}
-	.dop__service1,
+	
 	.dop__service2,
 	.dop__service3{
+		width: 505px;
+	}
+	.dop__service1{
+		margin-top: 50px;
 		width: 505px;
 	}
 	.dop__service1-head,
@@ -7416,6 +7488,9 @@ button{
 }
 .form__check-link:hover{
 	color: #AE4659;
+}
+.checkbox-show{
+	display: none;
 }
 @media(min-width: 640px){
 	.form{
